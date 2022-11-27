@@ -2,7 +2,7 @@ public class TeamVisitor implements Visitor {
 
     public void visit(CompositeTeam compositeTeam) {
         System.out.println(compositeTeam.name);
-        for (BaseTeam team : compositeTeam.teams) {
+        for (Team team : compositeTeam.teams) {
             if (team instanceof LeafTeam) {
                 ((LeafTeam) team).accept(this);
             } else {

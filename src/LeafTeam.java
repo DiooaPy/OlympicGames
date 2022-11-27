@@ -1,5 +1,5 @@
 
-public class LeafTeam extends BaseTeam {
+public class LeafTeam implements Team {
     String name;
     int athletes;
     int gold_medals;

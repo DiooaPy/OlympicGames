@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
-public class CompositeTeam extends BaseTeam {
+public class CompositeTeam implements Team {
     String name;
 
 
-    ArrayList<BaseTeam> teams = new ArrayList<>();
+    ArrayList<Team> teams = new ArrayList<Team>();
 
     public CompositeTeam(String name) {
 
@@ -14,12 +14,12 @@ public class CompositeTeam extends BaseTeam {
     }
 
 
-    public void add(BaseTeam team) {
+    public void add(Team team) {
 
         teams.add(team);
     }
 
-    public void remove(BaseTeam team) {
+    public void remove(Team team) {
 
         teams.remove(team);
     }
