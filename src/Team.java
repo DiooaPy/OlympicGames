@@ -1,4 +1,4 @@
-public interface Team  {
-    
+public interface Team {
+
     void accept(Visitor v);
 }

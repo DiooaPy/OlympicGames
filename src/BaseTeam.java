@@ -3,12 +3,12 @@ public class BaseTeam implements Team {
     int athletes;
     int gold_medals;
 
-    public void accept(Visitor v){
+    public void accept(Visitor v) {
 
-        if(this instanceof CompositeTeam){
-            v.visit((CompositeTeam)this);
-        }else{
-            v.visit((LeafTeam)this); 
+        if (this instanceof CompositeTeam) {
+            v.visit((CompositeTeam) this);
+        } else {
+            v.visit((LeafTeam) this);
         }
 
     }
